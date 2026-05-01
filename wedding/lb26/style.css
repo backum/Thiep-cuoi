@@ -225,6 +225,23 @@ pre {
     height: 100%;
 }
 
+#hand_click_icon {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: auto;
+    pointer-events: none;
+    animation: handBounce 1.2s ease-in-out infinite;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.25));
+    z-index: 10;
+}
+
+@keyframes handBounce {
+    0%, 100% { transform: translateX(-50%) translateY(0);    }
+    50%       { transform: translateX(-50%) translateY(-10px); }
+}
 
 /* ========== TEXT STYLES ========== */
 .text-inform {
