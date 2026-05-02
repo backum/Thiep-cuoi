@@ -228,8 +228,8 @@ pre {
 
 #hand_click_icon {
     position: absolute;
-    bottom: 25%;
-    left: 50%;
+    bottom: 30%;
+    left: 60%;
     transform: translateX(-50%);
     width: 60px;
     height: auto;
