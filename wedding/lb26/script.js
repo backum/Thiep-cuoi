@@ -475,3 +475,21 @@ document.addEventListener('touchend', function (e) {
 document.addEventListener('DOMContentLoaded', function () {
     renderWishList();
 });
+
+// ========== PAUSE MUSIC WHEN LEAVING PAGE ==========
+document.addEventListener('visibilitychange', function () {
+    const music = document.getElementById('bg_music');
+    if (!music) return;
+
+    if (document.hidden) {
+        // Tab/app bị ẩn → tạm dừng nhạc
+        if (musicPlaying) {
+            music.pause();
+        }
+    } else {
+        // Quay lại → phát tiếp nếu trước đó đang chạy
+        if (musicPlaying) {
+            music.play().catch(() => {});
+        }
+    }
+});
