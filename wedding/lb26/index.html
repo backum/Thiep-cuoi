@@ -187,28 +187,23 @@
             background-repeat: no-repeat;
             background-position: center top;
             background-color: var(--background-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 32px;
+            padding: 40px 20px;
         }
 
-        #qr_groom {
-            position: absolute;
-            top: 33%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-
+        #qr_groom,
         #qr_bride {
-            position: absolute;
-            top: 75%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             text-align: center;
         }
 
         .qr-img {
             border-radius: 24px;
-            width: 240px;
-            height: 240px;
+            width: 270px;
+            height: 270px;
             background: white;
             padding: 4px;
         }
@@ -502,7 +497,7 @@
             <img src="images/save_the_date.jpg" alt="Save The Date" loading="lazy">
         </div>
         <!-- ====== 4b. SỰ KIỆN CƯỚI (kiểu mehappy.vn) ====== -->
-        <div style="position:relative;background:white;width:100%;overflow:hidden;padding:0;">
+        <div style="position:relative;background:#efece9;width:100%;overflow:hidden;padding:0;">
 
 
             <div
@@ -788,8 +783,8 @@
         </section>
 
         <!-- ====== 9. QR MỪNG CƯỚI ====== -->
-        <section id="section_qr_bank" class="card-section">
-            <!-- QR Chú rể (top 1/3) -->
+        <section id="section_qr_bank">
+            <!-- QR Chú rể -->
             <div id="qr_groom">
                 <img src="images/qr_tuan_trim.webp" alt="QR Chú rể" class="qr-img">
                 <div class="text_info_bank">
@@ -799,7 +794,7 @@
                 </div>
             </div>
 
-            <!-- QR Cô dâu (top 3/4) -->
+            <!-- QR Cô dâu -->
             <div id="qr_bride">
                 <img src="images/qr_trang_trim.webp" alt="QR Cô dâu" class="qr-img">
                 <div class="text_info_bank">
